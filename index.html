@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/yoda.css">
+    <title>Bible to Yoda</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Javascript/yoda.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bible to Yoda Translator</h1>
+        <img class="hero-pic" src="Images/yoda-pic.jpg" alt="Master Yoda">
+    </header>
+
+    <main>
+        <form class="yoda-form">
+            <!-- <label class="yoda-text-label" for="yoda-text">Enter Your Text Here</label>
+            <input type="text" id="yoda-text" name="yoda-text" size="50"> -->
+
+            <label for="book">Book:</label>
+            <select id="book" name="book">
+                <option value="MATTHEW">Matthew</option>
+                <option value="MARK">Mark</option>
+                <option value="LUKE">Luke</option>
+                <option value="JOHN">John</option>
+                <option value="ACTS">Acts</option>
+                <option value="ROMANS">Romans</option>
+                <option value="1CORINTHIANS">1 Corinthians</option>
+                <option value="2CORINTHIANS">2 Corinthians</option>
+                <option value="GALATIANS">Galatians</option>
+                <option value="EPHESIANS">Ephesians</option>
+                <option value="PHILIPPIANS">Philippians</option>
+                <option value="COLOSSIANS">Colossians</option>
+                <option value="1THESSALONIANS">1 Thessalonians</option>
+                <option value="2THESSALONIANS">2 Thessalonians</option>
+                <option value="1TIMOTHY">1 Timothy</option>
+                <option value="2TIMOTHY">2 Timothy</option>
+                <option value="TITUS">Titus</option>
+                <option value="PHILEMON">Philemon</option>
+                <option value="HEBREWS">Hebrews</option>
+                <option value="JAMES">James</option>
+                <option value="1PETER">1 Peter</option>
+                <option value="2PETER">2 Peter</option>
+                <option value="1JOHN">1 John</option>
+                <option value="2JOHN">2 John</option>
+                <option value="3JOHN">3 John</option>
+                <option value="JUDE">Jude</option>
+                <option value="REVELATION">Revelation</option>
+            </select>
+
+            <label for="chapter">Chapter:</label>
+            <input type="text" id="chapter" name="chapter" size="2" maxlength="3">
+
+            <label for="verse">Verse:</label>
+            <input type="text" id="verse" name="verse" size="2" maxlength="2">
+
+            <button id="submit-btn" type="button" onclick="send();">Translate</button>
+        </form>
+
+        <div class="translation-container">
+            <h2>Translation</h2>
+            <p id="translation-text">Some text for translation</p>
+        </div>
+
+        <div class="original-container">
+            <h2>Original Text</h2>
+            <p id="original-text">What you searched in input</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Earnest 2021</p>
+        <a href="https://funtranslations.com/api/yoda">Yoda API Source</a>
+    </footer>
+</body>
+</html>

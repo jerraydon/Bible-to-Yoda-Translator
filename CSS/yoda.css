@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: auto;
+    width: 75%;
+    background-image: url("../Images/space-bg.jpg");
+    font-size: 1.5em;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.hero-pic {
+    width: 80%;
+}
+
+main {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.yoda-form label {
+    font-size: 1.4em;
+    padding: 0.5em;
+}
+
+.yoda-form input {
+    font-size: 1em;
+    width: 50%;
+    padding: 1em;
+    margin: auto;
+    border-radius: 100px;
+    display: block;
+    text-align: center;
+}
+
+.yoda-form select {
+    font-size: 1em;
+    width: 54%;
+    padding: 1em;
+    margin: auto;
+    border-radius: 100px;
+    display: block;
+    text-align: center;
+}
+
+.yoda-form button {
+    font-size: 0.8em;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    padding: 10px;
+    background-color: white;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: blue;
+}
